@@ -51,6 +51,6 @@ Vagrant.configure("2") do |config|
     inline: "service mysql restart"
   config.vm.synced_folder "./configs", "/configs"
 
-  config.vm.provision "shell", path: "scripts/jenkins.sh"
-  config.vm.provision "shell", path: "scripts/docker.sh"
+  #config.vm.provision "shell", path: "scripts/jenkins.sh"
+  #config.vm.provision "shell", path: "scripts/docker.sh"
 end
